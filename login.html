@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet/less" type="text/css" href="Login.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
 </head>
 
 <body>
 
     <div class="grid-container">
-        <div class="grid-item">
+        <div class="grid-item1">
             <div class="left">
                 <div class="image-banner">
                     <div class="text-1">Hệ thống quản lý chat đa nền tảng</div>
@@ -24,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item2">
             <form id="formInput">
                 <div class="form-input">
                     <div class="header">
@@ -44,7 +45,7 @@
                             <div><a href="forgotPassword.html" style="text-decoration: none;">Quên mật khẩu</a></div>
                         </div>
                     </div>
-                    <div><button type="submit" class="btn-login">Đăng nhập</button></div>
+                    <button type="submit" class="btn-login">Đăng nhập</button>
                     <div class="footer">Bạn chưa có tài khoản?<a href="#"> Đăng kí</a></div>
                 </div>
             </form>
@@ -60,7 +61,8 @@
     </div>
     <div class="alert" id="alert" style="display: none;">
         <div class="icon" style="background-color: red;"></div>
-        <div class="message" style="color: rgba(238, 0, 51, 1); margin:0 2%;">Bạn đã nhập sai mật khẩu hoặc tài khoản</div>
+        <div class="message" style="color: rgba(238, 0, 51, 1); margin:0 2%;">Bạn đã nhập sai mật khẩu hoặc tài khoản
+        </div>
     </div>
     <script src="login.js"></script>
 </body>
