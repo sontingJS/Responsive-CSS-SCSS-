@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="left">
+                <div class="image-banner">
+                    <div class="text-1">Hệ thống quản lý chat đa nền tảng</div>
+                    <div class="text-2">Tiết kiệm thời gian tư vấn và chăm sóc khách hàng</div>
+                    <div class="pagination">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <form id="formInput">
+                <div class="form-input">
+                    <div class="header">
+                        <div class="caption">Đăng nhập vào tài khoản của bạn</div>
+                    </div>
+                    <div class="input">
+                        <div class="input-text"><input type="text" placeholder="Nhập tài khoản" class="input-email"
+                                id="email"></div>
+                        <div id="errMessageEmail" style="color: red;display: none;">Bạn chưa nhập tài khoản</div>
+                        <div class="input-text"><input type="password" placeholder="Nhập mật khẩu"
+                                class="input-password" id="password"></div>
+                        <div id="errMessagePassword" style="color: red; display: none; ">Bạn chưa nhập mật khẩu</div>
+                        <div class="checkbox">
+                            <div><input type="checkbox" class="cb-savepw" id="cbSavepw">
+                                <label for="cbSavepw">Lưu mật khẩu</label>
+                            </div>
+                            <div><a href="#" style="text-decoration: none;">Quên mật khẩu</a></div>
+                        </div>
+                    </div>
+                    <div><button type="submit" class="btn-login">Đăng nhập</button></div>
+                    <div class="footer">Bạn chưa có tài khoản?<a href="#"> Đăng kí</a></div>
+                </div>
+            </form>
+        </div>
+        <div class="change-lang">
+            <div class="earth"><img src="./images/earth.svg" alt="">
+            </div>
+            <div class="text">Tiếng Việt</div>
+            <div class="drop-down"><img src="./images/drop.svg" alt=""></div>
+        </div>
+        <div class="alert" id="alert" style="display: none;">
+            <div class="item" style="background-color: red;">aa</div>
+            <div class="item">Bạn đã nhập sai mật khẩu</div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
