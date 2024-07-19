@@ -1,0 +1,4 @@
+Email:admin@gmail.com 
+Password:123456
+Đăng nhập đã được validate đăng nhập tài khoản test là next sang form đổi mật khẩu lần đầu
+Quên mật khẩu chưa validate cứ điển rồi tiếp tục là next sang form khác
