@@ -4,6 +4,8 @@ const password = document.getElementById('password');
 const errMessageEmail = document.getElementById('errMessageEmail');
 const errMessagePassword = document.getElementById('errMessagePassword');
 const alert1 = document.getElementById('alert');
+const formNP1 = document.getElementById('formNP1');
+const Form = document.getElementById('Form');
 
 formInput.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -32,7 +34,10 @@ formInput.addEventListener('submit', function (e) {
                 document.getElementById('alert').style.display = 'none';
             }, 3000);
         }
+        if (email.value === 'admin@gmail.com' && password.value === '123456') {
+            Form.style.display = 'none';
+            formNP1.style.display = 'grid';
+        }
     }
-
 });
 

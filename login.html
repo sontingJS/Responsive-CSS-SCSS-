@@ -27,7 +27,7 @@
         </div>
         <div class="grid-item2">
             <form id="formInput">
-                <div class="form-input">
+                <div class="form-input" id="Form">
                     <div class="header">
                         <div class="caption">Đăng nhập vào tài khoản của bạn</div>
                     </div>
@@ -48,15 +48,35 @@
                     <button type="submit" class="btn-login">Đăng nhập</button>
                     <div class="footer">Bạn chưa có tài khoản?<a href="#"> Đăng kí</a></div>
                 </div>
-            </form>
+                <div class="form-new-password" id="formNP1" >
+                    <div class="header-npw">
+                        <div><a class="turn-back-npw" href="/login.html">&#8249; Quay lại</a></div>
+                        <div class="caption-npw">Đổi mật khẩu</div>
+                        <div style="color: transparent;">aaaaaa</div>
+                    </div>
+                    <div class="form-content-npw">
+                        <img src="./images/aaa.svg" alt="" class="img-npw">
+                        <div class="tittle-npw">Đăng nhập lần đầu</div>
+                        <div class="advice-npw">Đây là lần đầu tiên đăng nhập của bạn, bước đầu tiên bạn cần đổi mật
+                            khẩu để đảm bảo tính bảo mật cho tài khoản</div>
+                        <div class="input-npw">
+                            <input type="password" id="enter-npw" class="input-text-npw"
+                                placeholder="Nhập mật khẩu mới"><input type="password" id="renter-npw"
+                                class="input-text-npw" placeholder="Nhập lại mật khẩu mới">
+                        </div>
+                        <button id="btnNPW" class="btn-NPW">Xác nhận</button>
+                    </div>
+                </div>
         </div>
+        </form>
         <div class="change-lang">
             <div class="earth"><img src="./images/earth.svg" alt="">
             </div>
             <div class="text">Tiếng Việt</div>
             <div class="drop-down"><img src="./images/drop.svg" alt=""></div>
-
         </div>
+    </div>
+
 
     </div>
     <div class="alert" id="alert" style="display: none;">
