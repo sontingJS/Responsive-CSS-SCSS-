@@ -21,7 +21,7 @@ body {
 
     .grid-item1 {
         .left {
-            background: url('./images/background.svg') center center no-repeat;
+            background: url('../images/background.svg') center center no-repeat;
             background-size: cover;
             height: 100%;
             width: 100%;
@@ -30,7 +30,7 @@ body {
             align-items: center;
 
             .image-banner {
-                background: url('./images/banner.svg') center center no-repeat;
+                background: url('../images/banner.svg') center center no-repeat;
                 background-size: contain;
                 height: 55%;
                 width: 55%;
@@ -103,7 +103,7 @@ body {
             min-height: 385px;
 
             .header {
-                background: url('./images/logo.svg') center center no-repeat;
+                background: url('../images/logo.svg') center center no-repeat;
                 width: 100%;
                 background-size: contain;
                 height: 15%;
@@ -306,7 +306,7 @@ body {
     align-items: center;
 
     .icon {
-        background: url('./images/icon1.svg') center center no-repeat;
+        background: url('../images/icon1.svg') center center no-repeat;
         width: 20%;
         height: 100%;
         border-radius: 5px 0px 0px 5px;
@@ -420,7 +420,7 @@ body {
 @media only screen and (max-width: 767px) {
     .grid-container {
         grid-template-columns: 1fr;
-        background: url('./images/background.svg')center center no-repeat;
+        background: url('../images/background.svg')center center no-repeat;
         background-size: cover;
     }
 
