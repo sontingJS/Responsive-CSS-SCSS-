@@ -1,0 +1,429 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1.5fr 0.6fr;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.grid-container .grid-item1 .left {
+  background: url("../images/background.svg") center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container .grid-item1 .left .image-banner {
+  background: url("../images/banner.svg") center center no-repeat;
+  background-size: contain;
+  height: 55%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 18%;
+}
+.grid-container .grid-item1 .left .image-banner .text-1 {
+  font-family: Helvetica;
+  font-size: 2.5vw;
+  /* Điều chỉnh font-size theo vw */
+  font-weight: 400;
+  line-height: 1.2em;
+  /* Sử dụng em cho line-height */
+  margin-top: 90%;
+  /* Điều chỉnh margin theo vh */
+  width: 100%;
+  /* Đảm bảo text chiếm toàn bộ chiều rộng của container */
+  color: rgb(86, 128, 249);
+}
+.grid-container .grid-item1 .left .image-banner .text-2 {
+  line-height: 1.2em;
+  font-size: 1.5vw;
+  line-height: 1.2em;
+  margin-top: 1%;
+  font-family: "Quicksand";
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(86, 128, 249);
+}
+.grid-container .grid-item1 .left .image-banner .pagination {
+  margin-top: 2%;
+  margin-left: 27%;
+  width: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.grid-container .grid-item1 .left .image-banner .pagination .dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(86, 128, 249, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.grid-container .grid-item2 .form-input {
+  border: 1px rgb(255, 255, 255) solid;
+  width: 22vw;
+  height: 58vh;
+  margin-top: 45%;
+  margin-left: 10%;
+  box-shadow: 0px 4px 24px 0px rgba(86, 85, 210, 0.24);
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  min-height: 385px;
+}
+.grid-container .grid-item2 .form-input .header {
+  background: url("../images/logo.svg") center center no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 15%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container .grid-item2 .form-input .header .caption {
+  margin-top: 40%;
+  font-family: "Quicksand";
+  font-size: 1.3vw;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(238, 0, 51);
+}
+.grid-container .grid-item2 .form-input .input {
+  margin-top: 25%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+.grid-container .grid-item2 .form-input .input .input-text .input-email {
+  width: 85%;
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid rgb(141, 153, 187);
+}
+.grid-container .grid-item2 .form-input .input .input-text .input-password {
+  width: 85%;
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid rgb(141, 153, 187);
+}
+.grid-container .grid-item2 .form-input .input .checkbox {
+  display: flex;
+  gap: 33%;
+  font-size: 1vw;
+}
+.grid-container .grid-item2 .form-input .btn-login {
+  border: 1px red solid;
+  height: 4vh;
+  text-align: center;
+  /* align-items: center; */
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 6%;
+  background: rgb(238, 0, 51);
+  border-radius: 8px;
+  font-size: 0.9vw;
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+}
+.grid-container .grid-item2 .form-input .footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1vw;
+}
+.grid-container .grid-item2 .form-new-password {
+  border: 1px rgb(255, 255, 255) solid;
+  width: 22vw;
+  height: 60vh;
+  margin-top: 45%;
+  margin-left: 10%;
+  box-shadow: 0px 4px 24px 0px rgba(86, 85, 210, 0.24);
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  min-height: 385px;
+  grid-template-rows: 1.5fr 8.5fr;
+  display: none;
+}
+.grid-container .grid-item2 .form-new-password .header-npw {
+  border-radius: 16px 16px 0px 0px;
+  background: rgb(238, 0, 51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+}
+.grid-container .grid-item2 .form-new-password .header-npw .caption-npw {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 2.3vh;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.grid-container .grid-item2 .form-new-password .header-npw .turn-back-npw {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 1.5vh;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .img-npw {
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .tittle-npw {
+  height: auto;
+  width: auto;
+  font-size: 2.5vh;
+  margin: 0 7%;
+  color: rgb(238, 0, 51);
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .advice-npw {
+  height: auto;
+  width: auto;
+  font-size: 2vh;
+  margin: 0 7%;
+  color: black;
+  font-weight: 400;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw {
+  margin: 4% 7%;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .input-text-npw {
+  padding: 2%;
+  border: 1px solid rgb(181, 181, 195);
+  border-radius: 5px;
+  width: 100%;
+  margin: 2%;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .btn-NPW {
+  margin: 0% 2% 8% 8%;
+  padding: 2%;
+  background: rgb(208, 210, 213);
+  border-radius: 5px;
+  width: 87%;
+  border: none;
+  outline: none;
+  color: white;
+}
+.grid-container .change-lang {
+  width: auto;
+  display: flex;
+  gap: 3px;
+  position: absolute;
+  left: 90%;
+  right: 10%;
+  top: 5%;
+  bottom: 95%;
+  cursor: pointer;
+}
+.grid-container .change-lang .text {
+  white-space: nowrap;
+}
+
+.alert {
+  /* padding: 1vh; */
+  width: 27vw;
+  text-align: center;
+  height: 5.5vh;
+  position: absolute;
+  display: flex;
+  left: 70%;
+  top: 10%;
+  box-shadow: 0px 4px 24px 0px rgba(86, 85, 210, 0.24);
+  border-radius: 5px;
+  align-items: center;
+}
+.alert .icon {
+  background: url("../images/icon1.svg") center center no-repeat;
+  width: 20%;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .grid-container .grid-item2 .form-input {
+    margin-left: 6%;
+    margin-top: 75%;
+    width: 90%;
+    height: 42vh;
+    min-height: 380px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 0.8fr;
+  }
+  .grid-container .grid-item1 .left .image-banner {
+    width: 85%;
+  }
+  .grid-container .grid-item1 .left .image-banner .text-1 {
+    font-size: 3vw;
+  }
+  .grid-container .grid-item1 .left .image-banner .text-2 {
+    font-size: 2vw;
+  }
+  .grid-container .grid-item2 .form-input {
+    margin-left: 6%;
+    margin-top: 75%;
+    width: 90%;
+    height: 38vh;
+    min-height: 380px;
+  }
+  .grid-container .grid-item2 .form-input .input {
+    margin-top: 15%;
+    gap: 1vh;
+  }
+  .grid-container .grid-item2 .form-input .footer {
+    font-size: 1.9vw;
+  }
+  .grid-container .grid-item2 .form-input .btn-login {
+    font-size: 2vw;
+  }
+  .grid-container .grid-item2 .form-input .header {
+    height: 7vh;
+  }
+  .grid-container .grid-item2 .form-input .header .caption {
+    font-size: 2.5vw;
+    margin-top: 35%;
+  }
+  .grid-container .grid-item2 .form-input .input .checkbox {
+    font-size: 1.9vw;
+  }
+  .grid-container .change-lang {
+    left: 85%;
+    right: 15%;
+  }
+  .alert {
+    left: 65%;
+    width: 30vw;
+  }
+  .grid-container .grid-item2 .form-new-password {
+    margin-left: 6%;
+    margin-top: 75%;
+    width: 90%;
+    height: 44vh;
+    min-height: 380px;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .img-npw {
+    height: 13vh;
+  }
+  .grid-container .grid-item2 .form-new-password .header-npw .turn-back-npw {
+    font-size: 1vh;
+  }
+  .grid-container .grid-item2 .form-new-password .header-npw .caption-npw {
+    font-size: 1.5vh;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .tittle-npw {
+    font-size: 1.9vh;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .advice-npw {
+    font-size: 1.3vh;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .IAT span {
+    font-size: 0.95vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    background: url("../images/background.svg") center center no-repeat;
+    background-size: cover;
+  }
+  .grid-container .grid-item1 .left {
+    background: none;
+  }
+  .grid-container .grid-item1 .left .image-banner {
+    width: 85%;
+  }
+  .grid-container .grid-item1 .left .image-banner .text-1 {
+    font-size: 5vw;
+  }
+  .grid-container .grid-item1 .left .image-banner .text-2 {
+    font-size: 3.5vw;
+  }
+  .grid-container .grid-item2 .form-input {
+    margin-top: -18%;
+    margin-left: 11%;
+    width: 78%;
+    height: 100%;
+    min-height: 385px;
+  }
+  .grid-container .grid-item2 .form-input .input {
+    margin-top: 15%;
+    gap: 1vh;
+  }
+  .grid-container .grid-item2 .form-input .header {
+    height: 8vh;
+  }
+  .grid-container .grid-item2 .form-input .header .caption {
+    font-size: 3.8vw;
+    margin-top: 36%;
+  }
+  .grid-container .grid-item2 .form-input .input .checkbox {
+    font-size: 2.8vw;
+  }
+  .grid-container .grid-item2 .form-input .footer {
+    font-size: 2.8vw;
+  }
+  .grid-container .grid-item2 .form-input .btn-login {
+    font-size: 3vw;
+  }
+  .grid-container .change-lang {
+    left: 68%;
+    right: 32%;
+  }
+  .grid-container .grid-item2 .form-new-password {
+    margin-top: -18%;
+    margin-left: 11%;
+    width: 78%;
+    height: 100%;
+    min-height: 385px;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .img-npw {
+    height: 13vh;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .advice-npw {
+    font-size: 1.4vh;
+  }
+  .grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .IAT span {
+    font-size: 1.2vh;
+  }
+  .alert {
+    left: 45%;
+    width: 53vw;
+    background: white;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */
