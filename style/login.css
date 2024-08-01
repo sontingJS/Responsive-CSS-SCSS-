@@ -120,13 +120,23 @@ body {
   flex-direction: column;
   gap: 1.5vh;
 }
-.grid-container .grid-item2 .form-input .input .input-text .input-email {
-  width: 85%;
-  padding: 3%;
-  border-radius: 5px;
-  border: 1px solid rgb(141, 153, 187);
+.grid-container .grid-item2 .form-input .input .form-group {
+  display: flex;
+  margin-bottom: 3px;
+  flex-direction: column;
 }
-.grid-container .grid-item2 .form-input .input .input-text .input-password {
+.grid-container .grid-item2 .form-input .input .form-group .form-message {
+  font-size: 0.85rem;
+  line-height: 0.8rem;
+  padding: 5px 0;
+}
+.grid-container .grid-item2 .form-input .input .form-group.invalid .form-control {
+  border-color: #f33a58;
+}
+.grid-container .grid-item2 .form-input .input .form-group.invalid .form-message {
+  color: #f33a58;
+}
+.grid-container .grid-item2 .form-input .input .input-text .form-control {
   width: 85%;
   padding: 3%;
   border-radius: 5px;
@@ -160,7 +170,7 @@ body {
 .grid-container .grid-item2 .form-new-password {
   border: 1px rgb(255, 255, 255) solid;
   width: 22vw;
-  height: 60vh;
+  height: 68vh;
   margin-top: 45%;
   margin-left: 10%;
   box-shadow: 0px 4px 24px 0px rgba(86, 85, 210, 0.24);
@@ -219,12 +229,28 @@ body {
   display: flex;
   flex-direction: column;
 }
-.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .input-text-npw {
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .form-group {
+  display: flex;
+  margin-bottom: 3px;
+  flex-direction: column;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .form-group .form-control {
   padding: 2%;
   border: 1px solid rgb(181, 181, 195);
   border-radius: 5px;
   width: 100%;
   margin: 2%;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .form-group .form-message {
+  font-size: 0.85rem;
+  line-height: 0.8rem;
+  padding: 5px 5px;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .form-group.invalid .form-control {
+  border-color: #f33a58;
+}
+.grid-container .grid-item2 .form-new-password .form-content-npw .input-npw .form-group.invalid .form-message {
+  color: #f33a58;
 }
 .grid-container .grid-item2 .form-new-password .form-content-npw .btn-NPW {
   margin: 0% 2% 8% 8%;

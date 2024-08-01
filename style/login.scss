@@ -132,20 +132,36 @@ body {
                 flex-direction: column;
                 gap: 1.5vh;
 
+                .form-group {
+                    display: flex;
+                    margin-bottom: 3px;
+                    flex-direction: column;
+
+                    .form-message {
+                        font-size: 0.85rem;
+                        line-height: 0.8rem;
+                        padding: 5px 0;
+                    }
+                }
+
+                .form-group.invalid {
+                    .form-control {
+                        border-color: #f33a58;
+                    }
+
+                    .form-message {
+                        color: #f33a58;
+                    }
+                }
+
                 .input-text {
-                    .input-email {
+                    .form-control {
                         width: 85%;
                         padding: 3%;
                         border-radius: 5px;
                         border: 1px solid rgba(141, 153, 187, 1)
                     }
 
-                    .input-password {
-                        width: 85%;
-                        padding: 3%;
-                        border-radius: 5px;
-                        border: 1px solid rgba(141, 153, 187, 1)
-                    }
                 }
 
                 .checkbox {
@@ -185,7 +201,7 @@ body {
         .form-new-password {
             border: 1px rgba(255, 255, 255, 1) solid;
             width: 22vw;
-            height: 60vh;
+            height: 68vh;
             margin-top: 45%;
             margin-left: 10%;
             box-shadow: 0px 4px 24px 0px rgba(86, 85, 210, 0.24);
@@ -251,12 +267,35 @@ body {
                     display: flex;
                     flex-direction: column;
 
-                    .input-text-npw {
-                        padding: 2%;
-                        border: 1px solid rgba(181, 181, 195, 1);
-                        border-radius: 5px;
-                        width: 100%;
-                        margin: 2%;
+
+                    .form-group {
+                        display: flex;
+                        margin-bottom: 3px;
+                        flex-direction: column;
+
+                        .form-control {
+                            padding: 2%;
+                            border: 1px solid rgba(181, 181, 195, 1);
+                            border-radius: 5px;
+                            width: 100%;
+                            margin: 2%;
+                        }
+
+                        .form-message {
+                            font-size: 0.85rem;
+                            line-height: 0.8rem;
+                            padding: 5px 5px;
+                        }
+                    }
+
+                    .form-group.invalid {
+                        .form-control {
+                            border-color: #f33a58;
+                        }
+
+                        .form-message {
+                            color: #f33a58;
+                        }
                     }
                 }
 
